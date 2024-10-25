@@ -1,0 +1,90 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.babble-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: #1b3b54;
+  background-image: radial-gradient(rgb(255, 255, 255, 0.2) 1px, transparent 0);
+  background-size: 10px 10px;
+}
+
+.babble-header {
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.babble-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 60px; /* Add extra bottom margin to prevent overlap */
+}
+
+.babble-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #1b3b54;
+  border: 2px solid #fd8a00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px 0 rgba(253, 138, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.babble-circle:hover span {
+  color: #00CCFF; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.countdown-text {
+  position: absolute;
+  top: 110%; /* Positions the countdown text below the circle */
+  font-size: 1rem;
+  color: #FF0000;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px; /* Add extra spacing to avoid overlap with footer icons */
+}
+
+.babble-circle span {
+  color: #fd8a00;
+  font-size: 1.5rem;
+}
+
+.babble-footer {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 300px;
+    margin-bottom: -73px;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #1b3b54;
+  border: 2px solid #fd8a00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  color: #fd8a00;
+  font-size: 1.5rem;
+}
